@@ -1,0 +1,90 @@
+.textdesc{
+    font-size: 15px;
+    line-height: 24px;
+    color: #757575;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;    
+}
+body{
+    position: relative;
+}
+.input-group{
+    width: 750px;
+    margin-top: 200px;
+}
+.brandsection{
+    height: 500px;
+}
+.brandsection>img{
+    margin-bottom: 25px;
+}
+p.card-text{
+    font-weight:3000;
+    text-align: center;
+}
+.proddesc{
+    height: 300px;
+}
+.navsection{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+div.sec{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img.card-img-top{
+    height: 200px;
+    margin-top: 10px;
+}
+a.nav-link{
+    color: white;
+    font-weight: 600;
+}
+.masthead{
+    background-color: rgba(106, 108, 109, 0.747);
+    height: 600px;
+    background-size: cover;
+}
+
+.prodheader{
+    font-weight: 50;
+    margin-top: 30px;
+    margin-bottom:20px; 
+}
+
+footer{
+    background-color: rgb(160, 158, 158);
+    color: rgba(12, 11, 11, 0.404);
+}
+
+a{
+    color: rgba(12, 11, 11, 0.404);
+}
+.carousel{
+	margin-top: 70px;
+}
+a>div.card{
+    color: black;
+}
+a:hover{
+    text-decoration: none;  
+}
+.reviewcard{
+    width: 100px;
+    height: 100px;
+}
+.reviewicons{
+    width: 70px;
+    height: 70px;
+}
+p.pricing{
+    font-size: 25px;
+}
+.pricingdesc{
+    font-size: 15px;
+    line-height: 24px;
+
+}

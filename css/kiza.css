@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+
+
+* {
+	box-sizing: border-box;
+  }
+.shopping-cart {
+	width: 750px;
+	height: 100%;
+	margin: 80px auto;
+	background: #FFFFFF;
+	box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+	border-radius: 6px;
+  
+	display: flex;
+	flex-direction: column;
+  }  
+.titler {
+	height: 60px;
+	border-bottom: 1px solid #E1E8EE;
+	padding: 20px 30px;
+	color: #5E6977;
+	font-size: 18px;
+  }
+.item {
+	padding: 20px 30px;
+	height: 120px;
+	display: flex;
+  }
+.item:nth-child(3) {
+	border-top:  1px solid #E1E8EE;
+	border-bottom:  1px solid #E1E8EE;
+  }
+.buttoner {
+	position: relative;
+	padding-top: 30px;
+	margin-right: 60px;
+  }
+.delete-btner {
+	display: inline-block;
+	cursor: pointer;
+	width: 18px;
+	height: 17px;
+	background: url("../assets/delete-icn.svg") no-repeat center;
+	margin-right: 20px;
+  }
+.is-active {
+	animation-name: animate;
+	animation-duration: .8s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(28);
+	animation-fill-mode: forwards;
+  }
+  
+@keyframes animate {
+	0%   { background-position: left;  }
+	50%  { background-position: right; }
+	100% { background-position: right; }
+  }
+  .like-btner {
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	display: inline-block;
+	background: url('../assets/twitter-heart.png');
+	width: 60px;
+	height: 60px;
+	background-size: 2900%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+  }  
+
+  .image {
+	margin-right: 50px;
+  }
+  
+  /* Product Description */
+  .description {
+	padding-top: 10px;
+	margin-right: 60px;
+	width: 115px;
+  }
+  
+  .description span {
+	display: block;
+	font-size: 14px;
+	color: #43484D;
+	font-weight: 400;
+  }
+
+  .description span:first-child {
+	margin-bottom: 5px;
+  }
+  .description span:last-child {
+	font-weight: 300;
+	margin-top: 8px;
+	color: #86939E;
+  }
+  
+  /* Product Quantity */
+  .quantity {
+	padding-top: 20px;
+	margin-right: 60px;
+  }
+  .quantity input {
+	-webkit-appearance: none;
+	border: none;
+	text-align: center;
+	width: 32px;
+	font-size: 16px;
+	color: #43484D;
+	font-weight: 300;
+  }
+
+  button[class*=btner] {
+	width: 30px;
+	height: 30px;
+	background-color: #E1E8EE;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+  }
+  .minus-btner img {
+	margin-bottom: 3px;
+  }
+  .plus-btner img {
+	margin-top: 2px;
+  }
+
+  .total-price {
+	width: 83px;
+	padding-top: 27px;
+	text-align: center;
+	font-size: 16px;
+	color: #43484D;
+	font-weight: 300;
+  }
+  
+  /* Responsive */
+  @media (max-width: 800px) {
+	.shopping-cart {
+	  width: 100%;
+	  height: auto;
+	  overflow: hidden;
+	}
+	.item {
+	  height: auto;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+	.image img {
+	  width: 50%;
+	
+	}
+	.masticon{
+		display: flex;
+		justify-content: right;
+	}
+
+	
+	.image,
+	.quantity,
+	.description {
+	  width: 100%;
+	  text-align: center;
+	  margin: 6px 0;
+	}
+	.buttoner {
+	  margin-right: 20px;
+	}
+  }
+.vendorheader{
+	font-weight: 100;
+	margin-top: 30px;
+}
+  .pizzacard{
+	  background-image: url(../assets/pizza.jpeg);
+	  background-size: cover;
+   }
+   .ribcard{
+	   background-image: url(../assets/ribs.jpg);
+	   background-size: cover;
+   }
+   .burgercard{
+	background-image: url(../assets/PhillyCheesesteakBurger.png);
+	background-size: cover;
+}
+.tacoscard{
+	background-image: url(../assets/beef-tacos.jpg);
+	background-size: cover;
+}
+.tatocard{
+	background-image: url(../assets/potato-tater-tots.jpg);
+	background-size: cover;
+}
+.fdipcard{
+	background-image: url(../assets/famous-french-dip.jpg);
+	background-size: cover;
+}
+.pastacard{
+	background-image: url(../assets/pesto-chicken-pasta.jpg);
+	background-size: cover;
+
+}
+
+.mdc-card__media-content{
+	color: rgba(17, 13, 13, 0.952);
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	outline-color: white;
+}
+.vendorcard{
+	height: 400px;
+ 	width: 1000px;
+}
+.headergraphics{
+	background-image: url("../assets/pizzamast.jpeg");
+	background-size: cover;
+	height: 600px;
+	margin-bottom: 50px;
+}
+
+blockquote{
+    color: white;
+    font-size: 45px;
+	font-weight: 100;
+	padding-left: 90px;
+}
+.mdc-top-app-bar{
+	background-color: brown;
+}
+
+.scrolling-wrapper {
+	display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.prodcard {
+	flex: 0 0 auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 200px;
+}
+
+::-webkit-scrollbar {
+	  display: none;
+	}
+
+.mdc-card__actions{
+	margin: auto;
+}	
